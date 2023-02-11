@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar & Animation</title>
+    <style>
+        .grid_container{
+            display: grid;
+            grid-template-columns:  auto auto auto auto auto auto auto;
+            padding: 20px;
+            width: 95%;
+            overflow: hidden;
+        
+        }
+        .day{
+            background-color: gainsboro;
+        }
+        .heading{
+            text-align: center;
+            width: 500px;
+        }
+        .containe{
+            border: 1px solid black;
+            width: 500px;
+
+        }
+
+        .container{
+            display: flex;
+            width:600px ;
+
+        }
+        .abc {
+            color: rgba(0, 0, 0, 0.623);
+            width: 220px;
+            height: 150px;
+            padding: 50px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .a1::before{
+            content: "Lifestyle";
+            background-color: green;
+            padding: 4px;
+            animation-name: kc1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes kc1{
+            0%{
+                content: "Lifestyle";
+                background-color: green;
+                padding: 4px;
+
+            }
+            50% {
+                content: "Work";
+                background-color: rgb(143, 143, 255);
+                padding: 4px;
+
+            }
+            75% {
+                content: "Everything";
+                background-color: red;
+                padding: 4px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="containe">
+    <h1 class="heading"> December 2020</h1>
+    <div class="grid_container">
+        <div class="items day">Sun</div>
+        <div class="items day">Mon</div>
+        <div class="items day">Tue</div>
+        <div class="items day">Wed</div>
+        <div class="items day">Thu</div>
+        <div class="items day">Fri</div>
+        <div class="items day">Sat</div>
+
+
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+        <div class="items">13</div>
+        <div class="items">14</div>
+        <div class="items">15</div>
+        <div class="items">16</div>
+        <div class="items">17</div>
+        <div class="items">18</div>
+        <div class="items">19</div>
+        <div class="items">20</div>
+        <div class="items">21</div>
+        <div class="items">22</div>
+        <div class="items">23</div>
+        <div class="items">24</div>
+        <div class="items">25</div>
+        <div class="items">26</div>
+        <div class="items">27</div>
+        <div class="items">28</div>
+        <div class="items">29</div>
+        <div class="items">30</div>
+        <div class="items">31</div>
+
+    </div>
+</div>
+    
+<div class="container">
+        <div class="items_1">
+            <h1 class="abc">MAKE <div class="a1"> </div> AWESOME</h1>
+        </div>
+    </div>
+</body>
+</html>
